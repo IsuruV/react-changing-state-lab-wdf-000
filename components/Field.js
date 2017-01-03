@@ -4,7 +4,8 @@ class Field extends React.Component {
   render () {
     const { player, onClick } = this.props;
     return (
-      <button>
+      <button className = 'field' disabled = {!!this.props.player} onClick={this.props.onClick}>
+        {this.props.player}
       </button>
     );
   }
